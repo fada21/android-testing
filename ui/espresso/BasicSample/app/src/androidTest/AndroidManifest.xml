@@ -19,10 +19,10 @@
       package="com.example.android.testing.espresso.BasicSample"
       android:versionCode="1"
       android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="26" />
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="27" />
 
     <instrumentation android:targetPackage="com.example.android.testing.espresso.BasicSample"
                      android:name="android.support.test.runner.AndroidJUnitRunner"/>
 
-    <application tools:replace="label" android:label="BasicSampleTest" />
+    <application tools:replace="label" android:label="BasicSampleTest" android:name="android.support.multidex.MultiDexApplication" />
 </manifest>
